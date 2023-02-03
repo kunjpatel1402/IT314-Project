@@ -1,6 +1,6 @@
-Q.1. Identify FRs and NFRs:
+## **Q.1. Identify FRs and NFRs:**
 
-Functonal requirements.
+**Functonal requirements.**
 
 - Access to the Library Information System should be strictly controlled and access should be allowed only after signing in with valid acccount.
 
@@ -16,7 +16,7 @@ Functonal requirements.
 
 - Users should be able to access the application through various devices, OSs and browsers.
 
-Non-Functional requirements.
+**Non-Functional requirements.**
 
 - The application should run smoothly on the institute LAN.
 
@@ -30,11 +30,12 @@ Non-Functional requirements.
 
 - The system should be available 24x7 and down-time should be minimized.
 
-Q.2
+## **Q.2 Identify scope, features and non-functional aspects of the following problem.**
 
-Scope: It is an AI enabled tool that helps people suffering from hearing problems to be aware about sounds in their surroundings. The application is made such that it has a very simple yet elegant UI to ensure that the user has a seamless experience. It is made with the purpose of giving physically challenged people maximum awareness of their surroundings.
+**Scope:**
+- It is an AI enabled tool that helps people suffering from hearing problems to be aware about sounds in their surroundings. The application is made such that it has a very simple yet elegant UI to ensure that the user has a seamless experience. It is made with the purpose of giving physically challenged people maximum awareness of their surroundings.
 
-Features:
+**Features:**
 
 - It is a super-fast and light app that gives lightning fast notifications of surrounding sounds.
 
@@ -44,7 +45,7 @@ Features:
 
 - Feedback time for the system should be minimized and should not cross a certain threshold.
 
-Non-Functional Aspects:
+**Non-Functional Aspects:**
 
 - It is highly scalable thereby ensuring maximum number of people to use it simultaneously.
 
