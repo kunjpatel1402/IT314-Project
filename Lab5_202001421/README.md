@@ -226,3 +226,36 @@
 ```
 ## Errors shown by mypy
 
+![image](https://user-images.githubusercontent.com/75675988/227493916-ec375b0d-d810-4a13-a3bc-f9ea097b0bbe.png)
+
+This error was shown because the text editor by default used 4 spaces for indentation and a tab was inserted instead of 4 spaces.
+
+
+![image](https://user-images.githubusercontent.com/75675988/227494470-194ea450-5088-426a-934b-a2d459678148.png)    &emsp;&emsp;&emsp;&emsp;&emsp;         ![image](https://user-images.githubusercontent.com/75675988/227494623-e1d5d10c-f524-4a75-ad79-2bfb986c13e7.png)
+
+An extra tab can be seen in the above code snippet which after changing to spaces removes syntax error prompted at that line.
+
+![image](https://user-images.githubusercontent.com/75675988/227495004-99709fa4-ede2-4f5d-8b28-4ba2c5a43e20.png)
+
+After removal of that error mypy checks further and finds these errors. The top  error is due to missing modules which can be removed by importing the required modules using pip.
+
+Rest of the ![image](https://user-images.githubusercontent.com/75675988/227495187-e4e4a7e8-53bc-47ba-8eb3-8f62a215e3f5.png) are caused due to missing variables and can be removed either by declaring required variables or can be removed by removing commands/ expressions that use these variables. However the second option may not work as these expressions may be integral to working of the code. Hence, the correct approach will be to check if these expressions are required or not, then removing the expressions that are not required and declaring variables for the remaining expressions.
+
+![image](https://user-images.githubusercontent.com/75675988/227495366-757d30dd-a95f-40d1-8302-2a2cc3eae95a.png)
+
+After creating myHeap, i and i435 variables errors caused due to absence of these variables are resolved.
+
+![image](https://user-images.githubusercontent.com/75675988/227495435-932ef2a4-acc6-4fad-8cb2-d1b719be6858.png)
+
+Even after importing the required module we get an import error because even though mypy was able to find the module it was not able to find corresponding type hints.
+As here we know that module is installed we can suppress the error by using 
+
+![image](https://user-images.githubusercontent.com/75675988/227495535-848d53e2-343c-49de-b64a-de86040e4df3.png)
+
+And, thus we can identify and remove all errors from our file without executing it using mypy.
+
+![image](https://user-images.githubusercontent.com/75675988/227495627-52c500f2-66d5-4714-b66f-c5ee0bb113fd.png)
+
+
+
+
