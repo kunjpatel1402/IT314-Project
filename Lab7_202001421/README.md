@@ -463,3 +463,22 @@ public class UnitTesting4 {
 ```
 
 Here test fail where input values are extreme values from integer range.
+
+##### P5. The function prefix (String s1, String s2) returns whether or not the string s1 is a prefix of string s2 (you may assume that neither s1 nor s2 is null).
+
+```java
+public static boolean prefix(String s1, String s2){
+  if (s1.length() > s2.length())
+  {
+    return false;
+  }
+  for (int i = 0; i < s1.length(); i++)
+  {
+  if (s1.charAt(i) != s2.charAt(i))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+```
