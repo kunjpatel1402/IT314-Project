@@ -505,3 +505,100 @@ Boundary Partioning:
 |("a", "a") |true|
 |("", "") |true|
 |("a", "")|false|
+
+```java
+public class UnitTesting6 {
+  @Test
+  public void test1() {
+    String str1 = "good", str2 = "good morning";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test2() {
+    String str1 = "a", str2 = "abc";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test3() {
+    String str1 = "", str2 = "good morning";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test4() {
+    String str1 = "morning", str2 = "good morning";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, false);
+  }
+  @Test
+  public void test5() {
+    String str1 = "soft", str2 = "software";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test6() {
+    String str1 = "software", str2 = "soft";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, false);
+  }
+  @Test
+  public void test7() {
+    String str1 = "a", str2 = "ab";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test8() {
+    String str1 = "software", str2 = "softwareee";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test9() {
+    String str1 = "abc", str2 = "abc";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test10() {
+    String str1 = "a", str2 = "b";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, false);
+  }
+  @Test
+  public void test11() {
+    String str1 = "a", str2 = "a";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test12() {
+    String str1 = "", str2 = "";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, true);
+  }
+  @Test
+  public void test13() {
+    String str1 = "a", str2 = "";
+    Programs program = new Programs();
+    boolean output = program.prefix(str1, str2);
+    assertEquals(output, false);
+  }
+}
+```
+All test cases are passed successfully.
