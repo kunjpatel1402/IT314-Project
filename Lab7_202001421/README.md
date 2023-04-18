@@ -255,3 +255,57 @@ Boundary Value Analysis:
 |v = 5 a = []|-1|
 |v = 5 a = [5, 7, 9]|0|
 |v = 5 a = [1, 2, 3]|2|
+
+```java
+public class UnitTesting3 {
+  @Test
+  public void test1() {
+    int input[] = { 2, 14, 26, 38, 510 };
+    Programs program = new Programs();
+    int output = program.binarySearch(26, input);
+    assertEquals(2, output);
+  }
+  @Test
+  public void test2() {
+    int input[] = { 2, 14, 26, 38, 510 };
+    Programs program = new Programs();
+    int output = program.binarySearch(2, input);
+    assertEquals(0, output);
+  }
+  @Test
+  public void test3() {
+    int input[] = { 2, 14, 26, 38, 510 };
+    Programs program = new Programs();
+    int output = program.binarySearch(510, input);
+    assertEquals(4, output);
+  }
+  @Test
+  public void test4() {
+    int input[] = { 2, 14, 26, 38, 510 };
+    Programs program = new Programs();
+    int output = program.binarySearch(1, input);
+    assertEquals(-1, output);
+  }
+  @Test
+  public void test5() {
+    int input[] = { };
+    Programs program = new Programs();
+    int output = program.binarySearch(511, input);
+    assertEquals(-1, output);
+  }
+  @Test
+  public void test6() {
+    int input[] = { 5, 7, 9 };
+    Programs program = new Programs();
+    int output = program.binarySearch(5, input);
+    assertEquals(0, output);
+  }
+  @Test
+  public void test6() {
+    int input[] = { 5, 7, 9 };
+    Programs program = new Programs();
+    int output = program.binarySearch(9, input);
+    assertEquals(2, output);
+  }
+}
+```
