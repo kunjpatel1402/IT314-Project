@@ -345,3 +345,14 @@ Equivalence Partitioning:
 |(0, 1, 1) |3|
 |(1, 0, 1) |3|
 |(1, 1, 0) |3|
+
+Boundary Value Analysis:
+|Input Data|Expected Output|
+|(0, 0, 0) |3|
+|a + b = c or b + c = a or c + a = b |3|
+|(5, 5, 5) |0|
+|a = b != c = 3| 1|
+|a != b = c = 3| 1|
+|a = c != b = 3| 1|
+|{a = b + c - 1} or {b = a + c - 1} or {c = a + b - 1}|2|
+|a = b = c = Integer.MAX_VALUE or a = b = c = Integer.MIN_VALUE|3|
