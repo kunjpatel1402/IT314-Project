@@ -652,13 +652,13 @@ message to the standard output that states whether the triangle, if it can be fo
 |(7, 25, 23)| Right angled triangle| E11|
 
 c.
-(5, 5, 10) (a + b = c)
-(5, 4.9, 10) (a + b < c)
-(5, 5.1, 10) (a + b > c)
+- (5, 5, 10) (a + b = c)
+- (5, 4.9, 10) (a + b < c)
+- (5, 5.1, 10) (a + b > c)
 
 d.
-(2, 2, 2) (a=c=b)
-(4.4, 4.4, 4.6) (a just less than c)
-(5.5, 5.5, 5.3) (a just greater than c)
+- (2, 2, 2) (a=c=b)
+- (4.4, 4.4, 4.6) (a just less than c)
+- (5.5, 5.5, 5.3) (a just greater than c)
 
 e.
