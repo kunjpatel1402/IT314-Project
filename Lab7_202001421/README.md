@@ -348,6 +348,7 @@ Equivalence Partitioning:
 
 Boundary Value Analysis:
 |Input Data|Expected Output|
+|----------|---------------|
 |(0, 0, 0) |3|
 |a + b = c or b + c = a or c + a = b |3|
 |(5, 5, 5) |0|
