@@ -301,11 +301,29 @@ public class UnitTesting3 {
     assertEquals(0, output);
   }
   @Test
-  public void test9() {
+  public void test7() {
     int input[] = { 5, 7, 9 };
     Programs program = new Programs();
     int output = program.binarySearch(9, input);
     assertEquals(2, output);
   }
+}
+```
+
+##### P4. The following problem has been adapted from The Art of Software Testing, by G. Myers (1979). The function triangle takes three integer parameters that are interpreted as the lengths of the sides of a triangle. It returns whether the triangle is equilateral (three lengths equal), isosceles (two lengths equal), scalene (no lengths equal), or invalid (impossible lengths)
+
+```java
+final int EQUILATERAL = 0;
+final int ISOSCELES = 1;
+final int SCALENE = 2;
+final int INVALID = 3;
+int triangle(int a, int b, int c){
+  if (a >= b+c || b >= a+c || c >= a+b)
+    return(INVALID);
+  if (a == b && b == c)
+    return(EQUILATERAL);
+  if (a == b || a == c || b == c)
+    return(ISOSCELES);
+  return(SCALENE);
 }
 ```
