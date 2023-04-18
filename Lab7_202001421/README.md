@@ -217,3 +217,41 @@ public class UnitTesting2 {
   }
 }
 ```
+
+##### P3. The function binarySearch searches for a value v in an ordered array of integers a. If v appears in the array a, then the function returns an index i, such that a[i] == v; otherwise, -1 is returned.
+
+```java
+int binarySearch(int v, int a[]){
+  int lo, mid, hi;
+  lo = 0;
+  hi = a.length-1;
+  while (lo <= hi)
+  {
+    mid = (lo+hi)/2;
+    if (v == a[mid])
+      return (mid);
+    else if (v < a[mid])
+      hi = mid-1;
+    else
+      lo = mid+1;
+  }
+  return(-1);
+}
+```
+Equivalence Partioning:
+|Test Input|Expected output|
+|----------|---------------|
+|v = 26 a = [2, 14, 26, 38, 510]|2|
+|v = 2 a = [2, 14, 26, 38, 510]|0|
+|v = 510 a = [2, 14, 26, 38, 510]|4|
+|v = 510 a = [2, 14, 26, 38, 510]|-1|
+|v = 511 a = [2, 14, 26, 38, 510]|-1|
+
+Boundary Value Analysis:
+
+|Test Input|Expected Output|
+|----------|---------------|
+|v = 10 a = [10]|0|
+|v = 5 a = []|-1|
+|v = 5 a = [5, 7, 9]|0|
+|v = 5 a = [1, 2, 3]|2|
