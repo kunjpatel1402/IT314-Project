@@ -69,9 +69,19 @@ Boundary Partitions
 
 |Tester Action and Input Data|Expected Output|
 |----------------------------|---------------|
-|v is non existent and empty array|-1|
-|v is non existent and non-empty array|-1|
+|v is in-valid and empty array|-1|
+|v is in-valid and non-empty array|-1|
 |v exists in array|index of v in array|
 |v doesn't exist in array|-1|
 
+Boundary Value Analysis
+
+|Tester Action and Input Data|Expected Output|
+|----------------------------|---------------|
+|v is in-valid and empty array|-1|
+|v is in-valid and non-empty array|-1|
+|v is valid and array length is 0|-1|
+|v is valid , exists in array and array length is 1|1|
+|v is valid , does not exists in array and array length is 1|-1|
+|v is valid , exists in array and array length $\gt$ 1|last index of v in array|
 
