@@ -482,3 +482,26 @@ public static boolean prefix(String s1, String s2){
   return true;
 }
 ```
+
+Equivalence Partioning:
+|Input Format |Expected Output|
+|-------------|---------------|
+|("good", "good morning") |true|
+|("a", "abc") |true|
+|("", "good morning") |true|
+|("morning", "good morning") |false|
+|("abc", "def")|false|
+
+Boundary Partioning:
+| Input Data | Expected Output|
+|------------|----------------|
+|("", "software") |true|
+|("soft", "software") |true|
+|("software", "soft") |false|
+|("a", "ab") |true|
+|("software", "softwareeee") |true|
+|("abc", "abc") |true|
+|("a", "b") |false|
+|("a", "a") |true|
+|("", "") |true|
+|("a", "")|false|
