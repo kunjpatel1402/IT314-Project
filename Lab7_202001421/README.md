@@ -164,3 +164,56 @@ Boundary Value Analysis
 |v is valid , exists in array (with first element as v) and array length $\gt$ 1|number of occurences of v in array|
 |v is valid , exists in array (with last element as v)and array length $\gt$ 1|number of occurences of v in array|
 
+```java
+public class UnitTesting2 {
+  @Test
+  public void test1() {
+    int input[] = { };
+    Programs program = new Programs();
+    int output = program.countItem(0, input);
+    assertEquals(output, 0);
+  }
+  @Test
+  public void test2() {
+    int input[] = { 21, 21, 22, 23, 21 };
+    Programs program = new Programs();
+    int output = program.countItem(10, input);
+    assertEquals(output, 0);
+  }
+  @Test
+  public void test3() {
+    int input[] = { 41, 41, 42, 43, 41 };
+    Programs program = new Programs();
+    int output = program.countItem(41, input);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test4() {
+    int input[] = { 51, 51, 52, 53, 51 };
+    Programs program = new Programs();
+    int output = program.countItem(52, input);
+    assertEquals(output, 1);
+  }
+  @Test
+  public void test5() {
+    int input[] = { 1 };
+    Programs program = new Programs();
+    int output = program.countItem(1, input);
+    assertEquals(output, 1);
+  }
+  @Test
+  public void test6() {
+    int input[] = { 1 };
+    Programs program = new Programs();
+    int output = program.countItem(2, input);
+    assertEquals(output, 0);
+  }
+  @Test
+  public void test7() {
+    int input[] = { 71, 71, 72, 73, 71, 71, 71 };
+    Programs program = new Programs();
+    int output = program.countItem(71, input);
+    assertEquals(output, 5);
+  }
+}
+```
