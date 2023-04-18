@@ -636,3 +636,18 @@ message to the standard output that states whether the triangle, if it can be fo
 |E9: a^2 + b^2 = c^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
 |E10: b^2 + c^2 = a^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
 |E11: c^2 + a^2 = b^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
+
+|Input format |Output|Equivalence Class Covered|
+|-------------|------|-------------------------|
+|(2.5, 4.6, 6.1)| Invalid| E1|
+|(-2.6, 5, 6)| Invalid| E2|
+|(7.1, 6.1, 1)| Invalid| E3|
+|(3.1, 3.1, 3.1)| Equilateral| E4|
+|(3.5, 3.5, 5)| Isosceles| E5|
+|(6, 4, 6)| Isosceles| E6|
+|(8, 5, 5)| Isosceles| E7|
+|(6, 7, 8)| Scalene| E8|
+|(3, 4, 5)| Right angled triangle| E9|
+|(0.13, 0.12, 0.05)| Right angled triangle| E10|
+|(7, 25, 23)| Right angled triangle| E11|
+
