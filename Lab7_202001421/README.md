@@ -130,6 +130,8 @@ public class UnitTesting1 {
 }
 ```
 
+All test cases pass succesfully.
+
 ##### P2. The function countItem returns the number of times a value v appears in an array of integers
 ```java
 int countItem(int v, int a[]){
@@ -217,6 +219,8 @@ public class UnitTesting2 {
   }
 }
 ```
+
+All test cases pass succesfully.
 
 ##### P3. The function binarySearch searches for a value v in an ordered array of integers a. If v appears in the array a, then the function returns an index i, such that a[i] == v; otherwise, -1 is returned.
 
@@ -310,6 +314,8 @@ public class UnitTesting3 {
 }
 ```
 
+All test cases pass succesfully.
+
 ##### P4. The following problem has been adapted from The Art of Software Testing, by G. Myers (1979). The function triangle takes three integer parameters that are interpreted as the lengths of the sides of a triangle. It returns whether the triangle is equilateral (three lengths equal), isosceles (two lengths equal), scalene (no lengths equal), or invalid (impossible lengths)
 
 ```java
@@ -327,3 +333,15 @@ int triangle(int a, int b, int c){
   return(SCALENE);
 }
 ```
+Equivalence Partitioning:
+|Input Data|Expected Output|
+|----------|---------------|
+|(2, 2, 2) |0|
+|(3, 3, 4) |1|
+|(6, 5, 4) |2|
+|(0, 0, 0) |3|
+|(-1, -1, 5) |3|
+|(2, 2, 1) |1|
+|(0, 1, 1) |3|
+|(1, 0, 1) |3|
+|(1, 1, 0) |3|
