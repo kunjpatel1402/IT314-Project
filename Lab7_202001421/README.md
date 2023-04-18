@@ -680,15 +680,15 @@ h.
 
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/75675988/232791442-04a73677-3164-4dea-9087-71e6bee1a5a5.png)
 
-- p = [ ( x = 2, y = 2 ), ( x = 2, y = 3 ), ( x = 1, y = 3 ), ( x = 1, y = 4 ) ]
+- p = [ ( x = 12, y = 12 ), ( x = 12, y = 13 ), ( x = 11, y = 13 ), ( x = 11, y = 14 ) ]
     - Statement Covered: { 1, 2, 3, 4, 5, 7, 8 }
     - Branches Covered: { 5, 8 }
     - Basic Conditions Covered: { 5 - false, 8 - false }
-- p = [ ( x = 2, y = 3 ), ( x = 3, y = 4 ), ( x = 1, y = 2 ), ( x = 5, y = 6 ) ]
+- p = [ ( x = 22, y = 23 ), ( x = 23, y = 24 ), ( x = 21, y = 22 ), ( x = 25, y = 26 ) ]
     - Statements covered = { 1, 2, 3, 4, 5, 6, 7}
     - Branches covered = { 5, 8 }
     - Basic conditions covered = {5-false,true, 8-false}
-- p = [ ( x = 1, y = 5 ), ( x = 2, y = 7 ), ( x = 3 , y = 5 ), ( x = 4, y = 5 ), ( x = 5, y = 6 ) ]
+- p = [ ( x = 51, y = 55 ), ( x = 52, y = 57 ), ( x = 53 , y = 55 ), ( x = 54, y = 55 ), ( x = 55, y = 56 ) ]
     - Statements covered = { 1, 2, 3, 4, 5, 6, 7, 8, 9}
     - Branches covered = { 5, 8 }
     - Basic conditions covered = { 5 - false, true, 8 - false, true }
