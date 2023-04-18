@@ -602,3 +602,22 @@ public class UnitTesting6 {
 }
 ```
 All test cases are passed successfully.
+
+##### P6. Consider again the triangle classification program (P4) with a slightly different specification:
+The program reads floating values from the standard input. The three values A, B, and C are
+interpreted as representing the lengths of the sides of a triangle. The program then prints a
+message to the standard output that states whether the triangle, if it can be formed, is scalene, isosceles, equilateral, or right angled.
+
+|Equivalent Classes |Expected Output|
+|-------------------|---------------|
+|E1: a + b ≤ c |Invalid|
+|E2: a + c ≤ b |Invalid|
+|E3: b + c ≤ a |Invalid|
+|E4: a = b, b = c, c = a and sum of any 2 sides is greater than the 3rd side|Equilateral|
+|E5: a = b, a != c  and sum of any 2 sides is greater than the 3rd side|Isosceles|
+|E6: a = c, a != b  and sum of any 2 sides is greater than the 3rd side|Isosceles|
+|E7: b = c, b != a  and sum of any 2 sides is greater than the 3rd side|Isosceles|
+|E8: a != b, b != c, c != a  and sum of any 2 sides is greater than the 3rd side|Scalene|
+|E9: a^2 + b^2 = c^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
+|E10: b^2 + c^2 = a^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
+|E11: c^2 + a^2 = b^2  and sum of any 2 sides is greater than the 3rd side|Right angled triangle|
