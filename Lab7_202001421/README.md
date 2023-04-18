@@ -30,6 +30,21 @@
 |E8|2|7|1876|Invalid date|
 |E9|2|7|2023|Invalid date|
 
+|Input format |Output |Equivalence Class Covered|
+|-------------|-------|-------------------------|
+|(2.5, 4.6, 6.1)| Invalid| E1|
+|(-2.6, 5, 6)| Invalid| E2|
+|(7.1, 6.1, 1)| Invalid| E3|
+|(3.421, 3.421, 3.421)| Equilateral| E4|
+|(3.5, 3.5, 5)| Isosceles| E5|
+|(7, 5, 7)| Isosceles| E6|
+|(9, 6, 6)| Isosceles| E7|
+|(6, 7, 8)| Scalene| E8|
+|(3, 4, 5)| Right angled triangle| E9|
+|(0.13, 0.12, 0.05)| Right angled triangle| E10|
+|(7, 25, 23)| Right angled triangle| E11|
+
+
 
 ##### Boundary Value Analysis:
 
