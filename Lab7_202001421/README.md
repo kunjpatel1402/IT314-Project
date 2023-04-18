@@ -141,3 +141,26 @@ int countItem(int v, int a[]){
   return (count);
 }
 ```
+Equivalence Partitions
+
+|Tester Action and Input Data|Expected Output|
+|----------------------------|---------------|
+|v is in-valid and empty array|0|
+|v is in-valid and non-empty array|0|
+|v exists in array|number of occurences of v in array|
+|v doesn't exist in array|0|
+
+
+Boundary Value Analysis
+
+|Tester Action and Input Data|Expected Output|
+|----------------------------|---------------|
+|v is in-valid and empty array|0|
+|v is in-valid and non-empty array|0|
+|v is valid and array length is 0|0|
+|v is valid , exists in array and array length is 1|1|
+|v is valid , does not exists in array and array length is 1|0|
+|v is valid , exists in array and array length $\gt$ 1|number of occurences of v in array|
+|v is valid , exists in array (with first element as v) and array length $\gt$ 1|number of occurences of v in array|
+|v is valid , exists in array (with last element as v)and array length $\gt$ 1|number of occurences of v in array|
+
