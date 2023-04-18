@@ -301,7 +301,7 @@ public class UnitTesting3 {
     assertEquals(0, output);
   }
   @Test
-  public void test6() {
+  public void test9() {
     int input[] = { 5, 7, 9 };
     Programs program = new Programs();
     int output = program.binarySearch(9, input);
