@@ -357,3 +357,109 @@ Boundary Value Analysis:
 |a = c != b = 3| 1|
 |{a = b + c - 1} or {b = a + c - 1} or {c = a + b - 1}|2|
 |a = b = c = Integer.MAX_VALUE or a = b = c = Integer.MIN_VALUE|3|
+
+```java
+public class UnitTesting4 {
+  @Test
+  public void test1() {
+    int a = 2, b = 2, c = 2;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 0);
+  }
+  @Test
+  public void test2() {
+    int a = 3, b = 3, c = 4;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 1);
+  }
+  @Test
+  public void test3() {
+    int a = 6, b = 5, c = 4;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 2);
+  }
+  @Test
+  public void test4() {
+    int a = 0, b = 0, c = 0;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test5() {
+    int a =-1, b =-1, c = 5;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test6() {
+    int a = 2, b = 2, c = 1;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 1);
+  }
+  @Test
+  public void test7() {
+    int a = 0, b = 1, c = 1;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test8() {
+    int a = 1, b = 0, c = 1;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test9() {
+    int a = 1, b = 1, c = 0;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  public void test10() {
+    int a = 1, b = 2, c = 3;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test11() {
+    int a = 3, b = 1, c = 3;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 1);
+  }
+  @Test
+  public void test12() {
+    int a = 5, b = 4, c = 2;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 2);
+  }
+  @Test
+  public void test13() {
+    int a = Integer.MAX_VALUE, b = Integer.MAX_VALUE, c =
+    Integer.MAX_VALUE;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+  @Test
+  public void test14() {
+    int a = Integer.MIN_VALUE, b = Integer.MIN_VALUE, c =
+    Integer.MIN_VALUE;
+    Programs program = new Programs();
+    int output = program.triangle(a, b, c);
+    assertEquals(output, 3);
+  }
+}
+```
+
+Here test fail where input values are extreme values from integer range.
