@@ -85,3 +85,59 @@ Boundary Value Analysis
 |v is valid , does not exists in array and array length is 1|-1|
 |v is valid , exists in array and array length $\gt$ 1|last index of v in array|
 
+```java
+public class UnitTesting1 {
+  @Test
+  public void test1() {
+  int arr[] = { 1, 2, 3, 4, 5 };
+  Programs program = new Programs();
+  int output = program.linearSearch(1, arr);
+  System.out.println(output);
+  assertEquals(0, output);
+  }
+  @Test
+  public void test2() {
+    int arr[] = { };
+    Programs program = new Programs();
+    int output = program.linearSearch(11, arr);
+    System.out.println(output);
+    assertEquals(-1, output);
+  }
+  @Test
+  public void test3() {
+    int arr[] = { 5 };
+    Programs program = new Programs();
+    int output = program.linearSearch(5, arr);
+    System.out.println(output);
+    assertEquals(0, output);
+  }
+  @Test
+  public void test4() {
+    int arr[] = { 10 };
+    Programs program = new Programs();
+    int output = program.linearSearch(11, arr);
+    System.out.println(output);
+    assertEquals(-1, output);
+  }
+  @Test
+  public void test5() {
+    int arr[] = { 1, 2, 3, 4, 5 };
+    Programs program = new Programs();
+    int output = program.linearSearch(7, arr);
+    System.out.println(output);
+    assertEquals(-1, output);
+  }
+}
+```
+
+##### P2. The function countItem returns the number of times a value v appears in an array of integers
+```java
+int countItem(int v, int a[]){
+  int count = 0;
+  for (int i = 0;i < a.length;i++){
+  if (a[i] == v)
+    count++;
+  }
+  return (count);
+}
+```
