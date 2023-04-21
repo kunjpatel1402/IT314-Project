@@ -87,3 +87,7 @@ public void testLengthInInches() {
 }
 
 ```
+
+On running tests we get a green bar indicating all tests have passed
+
+![image](https://user-images.githubusercontent.com/75675988/233603799-ec2a1935-0bb9-4f26-a887-b7bdc362e4c8.png)
