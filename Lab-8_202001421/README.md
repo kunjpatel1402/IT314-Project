@@ -5,7 +5,7 @@
 
 #### Boa Class
 
-'''java
+```java
 package pkg;
 
 public class Boa {
@@ -27,5 +27,4 @@ public class Boa {
 		return this.length < cageLength;	
 	}
 }
-
-'''
+```
