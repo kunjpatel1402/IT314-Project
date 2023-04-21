@@ -64,3 +64,8 @@ class Testcases {
 }
 
 ```
+
+On running the test we get a green bar indicating all test cases have passed.
+
+![image](https://user-images.githubusercontent.com/75675988/233603333-bb011b63-2af8-4ed9-ab5a-b9fa0891d6a1.png)
+
